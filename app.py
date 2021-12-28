@@ -6,7 +6,7 @@ from tasks import Search_engine
 from tempfile import NamedTemporaryFile
 
 # Load the CNN model
-@st.cache(allow_output_mutation=True)
+@st.cache()
 def load_model(path):
     return tf.keras.models.load_model(path)
 loaded_model = load_model('./cnn_model')
