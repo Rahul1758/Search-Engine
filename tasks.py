@@ -1,6 +1,5 @@
 import wordninja
 import numpy as np
-from PIL import Image
 import streamlit as st
 import tensorflow as tf
 
@@ -43,12 +42,9 @@ class Search_engine:
         similar_imgs_paths = [img_paths[i] for i in top_similar_idx]
 
         st.write('### Input image: \n')
-        input_img = Image.open(input_img_path)
-        st.image(input_img)
+        st.image(input_img_path)
         st.write('### Similar images: \n')
-        for path in similar_imgs_paths:
-            img = Image.open(path)
-            st.image(img)
+        st.image(similar_imgs_paths, width=150)            
     
     def find_similar_words(self, word, vocabulary, vector_matrix, n_similar):
         
@@ -74,8 +70,7 @@ class Search_engine:
         similar_words = ', '.join(similar_words)
 
         st.write('### Input image: \n')
-        input_img = Image.open(input_img_path)
-        st.image(input_img)
+        st.image(input_img_path)
         st.write(f'### Tags for input image: {similar_words}')
 
     def tag_to_images(self, word, extracted_features, img_paths, vocabulary, vector_matrix, n_similar, model):
@@ -89,6 +84,4 @@ class Search_engine:
 
         st.write(f'### Input word: {word} \n')
         st.write('### \n Similar images: \n')
-        for path in similar_imgs_paths:
-            img = Image.open(path)
-            st.image(img)
+        st.image(similar_imgs_paths, width=150) 
