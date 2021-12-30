@@ -1,5 +1,6 @@
 import wordninja
 import numpy as np
+from PIL import Image
 import streamlit as st
 import tensorflow as tf
 
@@ -32,7 +33,7 @@ class Search_engine:
             word_embed = vector_matrix[vocabulary.index(word.lower())]
         return word_embed
 
-    def find_similar_images(self, input_img_path, extracted_features, n_similar, img_paths, model):
+    def find_similar_images(self, input_img_path, input_img_file, extracted_features, n_similar, img_paths, model):
         # Extracting input image features and calculating cosine similarities
         input_feature_vec = self.image_feature_extraction(input_img_path, model)
         similarity_array = self.cosine_similarity(input_feature_vec, extracted_features)
@@ -42,7 +43,8 @@ class Search_engine:
         similar_imgs_paths = [img_paths[i] for i in top_similar_idx]
 
         st.write('### Input image: \n')
-        st.image(input_img_path)
+        img = Image.open(input_img_file)
+        st.image(img)
         st.write('### Similar images: \n')
         st.image(similar_imgs_paths, width=150)            
     
@@ -83,5 +85,5 @@ class Search_engine:
         similar_imgs_paths = [img_paths[i] for i in top_similar_idx]
 
         st.write(f'### Input word: {word} \n')
-        st.write('### \n Similar images: \n')
+        st.write('### Similar images: \n')
         st.image(similar_imgs_paths, width=150) 

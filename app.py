@@ -37,7 +37,7 @@ def main():
         if file is not None:
             temp_file.write(file.getvalue())
             if st.button('Find'):
-                se.find_similar_images(temp_file.name, image_features, 5, image_paths, loaded_model)
+                se.find_similar_images(temp_file.name, file, image_features, 5, image_paths, loaded_model)
     
     if page == 'Find similar words':
         st.title('Find similar words')
