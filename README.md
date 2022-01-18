@@ -41,9 +41,12 @@ My approach towards the above mentioned tasks are as follows:
 1. Build a CNN model using pretrained model (**Inception_V3**) which extracts features from images. Then I'll compare the image feature vectors to find the similar ones to the input image using Cosine similarity. Here I'll also be passing image names as target labels so the model outputs feature vectors close to the word embedding of target labels (image names). **Glove embeddings**(50d vectors) will be used to represent the target labels.
 
 📖 : https://nlp.stanford.edu/projects/glove/
+
 2. Using the Glove embeddings I'll create an embedding matrix which contains embeddings for all the words in vocabulary (~400k words). Then I'll compare input word embedding with each word in embedding matrix and output the most similar words.
+
 3. Using our previously trained CNN model, we'll obtain an output feature vector (of same shape as word embeddings) which then can be compared to each word embedding in embedding matrix and be used to output the most similar word embeddings to the image feature vector.
-4. This is reverse task of 3. wherein we have to compare input word embedding with the image feature vector and find the similar images.
+
+4. This is reverse task of `3.` wherein we have to compare input word embedding with the image feature vector and find the similar images.
 
 ## Data 
 I prepared custom dataset consisting of 20 images for each of the following Men's Fashion products: **Backpacks, Belts, Deodorants, Jackets, Shirts, Shoes, Socks, Sunglasses, Wallet, Watch**. The dataset was collected by Web-Scraping from **Flipkart, Amazon & Google Images**.
