@@ -7,19 +7,19 @@
   * [Data](#data)
   * [Libraries](#libraries)
   * [Installation](#installation)
-  * [To Do](#to do)
+  * [To Do](#to-do)
   * [Contact](#contact)
 
 ## Demo
 Link: [https://share.streamlit.io/rahul1758/search-engine/main/app.py](https://share.streamlit.io/rahul1758/search-engine/main/app.py)
 ### Find Similar Images
-![](https://github.com/Rahul1758/Search-Engine/tree/main/gifs & imgs/Similar_images.gif)
+![](https://github.com/Rahul1758/Search-Engine/tree/main/gifs%20%26%20imgs/Similar_images.gif)
 ### Find Similar Words
-![](https://github.com/Rahul1758/Search-Engine/tree/main/gifs & imgs/Similar_words.gif)
+![](https://github.com/Rahul1758/Search-Engine/tree/main/gifs%20%26%20imgs/Similar_words.gif)
 ### Generate Tags for Image
-![](https://github.com/Rahul1758/Search-Engine/tree/main/gifs & imgs/Tag_generation.gif)
+![](https://github.com/Rahul1758/Search-Engine/tree/main/gifs%20%26%20imgs/Tag_generation.gif)
 ### Find Related Images
-![](https://github.com/Rahul1758/Search-Engine/tree/main/gifs & imgs/Related_images.gif)
+![](https://github.com/Rahul1758/Search-Engine/tree/main/gifs%20%26%20imgs/Related_images.gif)
 
 ## Objective
 The Objective of this Project was to develop a Search Engine, which can be integrated with E-commerce sites for Small Vendors. These additional features could potentially **increase the Sale** on Vendor's website by helping the Customer find their desired product **easily & quickly**. The ultimate aim to save the Customer's valuable time and improve their Shopping experience.
