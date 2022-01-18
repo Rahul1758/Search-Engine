@@ -51,7 +51,7 @@ My approach towards the above mentioned tasks are as follows:
 ## Data 
 I prepared custom dataset consisting of 20 images for each of the following Men's Fashion products: **Backpacks, Belts, Deodorants, Jackets, Shirts, Shoes, Socks, Sunglasses, Wallet, Watch**. The dataset was collected by Web-Scraping from **Flipkart, Amazon & Google Images**.
 
-## Libraries
+## Packages/Libraries
 * Numpy
 * Pillow
 * WordNinja
