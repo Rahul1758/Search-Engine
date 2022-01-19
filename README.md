@@ -74,5 +74,5 @@ That's it!!
 * Use higher dimension Embedding vectors (300D) which might improve the Word search & Tag generation, as higher dimesion vector capture better meaning of the words.
 
 ## Contact
-If you have suggestions for improvement or any other query, you can reach me at following platforms:
+If you have suggestions for improvement or any other query, you can reach me at following platform:
   * [Linkedin](https://www.linkedin.com/in/rahul-menon-515702a7/)
